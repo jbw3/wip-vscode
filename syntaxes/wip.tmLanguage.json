@@ -3,26 +3,44 @@
 	"name": "WIP",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#comments"
 		},
 		{
-			"include": "#comments"
+			"include": "#constants_bool"
+		},
+		{
+			"include": "#constants_int"
+		},
+		{
+			"include": "#keywords"
 		},
 		{
 			"include": "#types"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.wip",
-				"match": "\\b(else|fun|if)\\b"
-			}]
-		},
 		"comments": {
 			"patterns": [{
 				"name": "comment.line.wip",
 				"match": "#.*"
+			}]
+		},
+		"constants_bool": {
+			"patterns": [{
+				"name": "constant.language.wip",
+				"match": "\\b(false|true)\\b"
+			}]
+		},
+		"constants_int": {
+			"patterns": [{
+				"name": "constant.language.wip",
+				"match": "\\b(0[Bb][01]+|0[Oo][0-7]+|[0-9]+|0[Xx][0-9A-Fa-f]+)\\b"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.wip",
+				"match": "\\b(else|fun|if)\\b"
 			}]
 		},
 		"types": {
