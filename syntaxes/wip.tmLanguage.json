@@ -7,6 +7,9 @@
 		},
 		{
 			"include": "#comments"
+		},
+		{
+			"include": "#types"
 		}
 	],
 	"repository": {
@@ -20,6 +23,12 @@
 			"patterns": [{
 				"name": "comment.line.wip",
 				"match": "#.*"
+			}]
+		},
+		"types": {
+			"patterns": [{
+				"name": "storage.type.wip",
+				"match": "\\b(bool|i32)\\b"
 			}]
 		}
 	},
