@@ -1,0 +1,25 @@
+{
+    "name": "wip-syntax",
+    "displayName": "WIP Syntax",
+    "description": "WIP syntax highlighting",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.34.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "wip",
+            "aliases": ["WIP", "wip"],
+            "extensions": [".wip"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "wip",
+            "scopeName": "source.wip",
+            "path": "./syntaxes/wip.tmLanguage.json"
+        }]
+    }
+}
