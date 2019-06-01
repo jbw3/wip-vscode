@@ -6,6 +6,9 @@
 			"include": "#comments"
 		},
 		{
+			"include": "#function_definition"
+		},
+		{
 			"include": "#constants_bool"
 		},
 		{
@@ -47,6 +50,34 @@
 			"patterns": [{
 				"name": "storage.type.wip",
 				"match": "\\b(bool|i32)\\b"
+			}]
+		},
+		"function_definition": {
+			"begin": "fun",
+			"end": "{",
+			"beginCaptures": {
+				"0": { "name": "keyword.control.wip" }
+			},
+			"name": "meta.function.definition.wip",
+			"patterns": [{
+				"include": "#comments"
+			},
+			{
+				"include": "#types"
+			},
+			{
+				"begin": "\\b([_a-zA-Z][_a-zA-Z0-9]*) *\\(",
+				"end": "\\)",
+				"beginCaptures": {
+					"1": { "name": "entity.name.function.wip" }
+				},
+				"name": "meta.function.definition.parameters.wip",
+				"patterns": [{
+					"include": "#comments"
+				},
+				{
+					"include": "#types"
+				}]
 			}]
 		}
 	},
