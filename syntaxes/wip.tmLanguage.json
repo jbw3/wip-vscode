@@ -18,6 +18,9 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#operators"
+		},
+		{
 			"include": "#types"
 		}
 	],
@@ -44,6 +47,12 @@
 			"patterns": [{
 				"name": "keyword.control.wip",
 				"match": "\\b(else|fun|if)\\b"
+			}]
+		},
+		"operators": {
+			"patterns": [{
+				"name": "keyword.operator.wip",
+				"match": "==|!=|<=|>=|\\+|-|\\*|/|%|&|\\||\\^|!|<|>"
 			}]
 		},
 		"types": {
