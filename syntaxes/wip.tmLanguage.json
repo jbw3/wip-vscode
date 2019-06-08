@@ -26,40 +26,28 @@
 	],
 	"repository": {
 		"comments": {
-			"patterns": [{
-				"name": "comment.line.wip",
-				"match": "#.*"
-			}]
+			"name": "comment.line.wip",
+			"match": "#.*"
 		},
 		"constants_bool": {
-			"patterns": [{
-				"name": "constant.language.wip",
-				"match": "\\b(false|true)\\b"
-			}]
+			"name": "constant.language.wip",
+			"match": "\\b(false|true)\\b"
 		},
 		"constants_int": {
-			"patterns": [{
-				"name": "constant.language.wip",
-				"match": "\\b(0[Bb][01]+|0[Oo][0-7]+|[0-9]+|0[Xx][0-9A-Fa-f]+)\\b"
-			}]
+			"name": "constant.language.wip",
+			"match": "\\b(0[Bb][01]+|0[Oo][0-7]+|[0-9]+|0[Xx][0-9A-Fa-f]+)\\b"
 		},
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.wip",
-				"match": "\\b(else|fun|if)\\b"
-			}]
+			"name": "keyword.control.wip",
+			"match": "\\b(else|fun|if)\\b"
 		},
 		"operators": {
-			"patterns": [{
-				"name": "keyword.operator.wip",
-				"match": "==|!=|<=|>=|&&|\\|\\||\\+|-|\\*|/|%|&|\\||\\^|!|<|>"
-			}]
+			"name": "keyword.operator.wip",
+			"match": "==|!=|<=|>=|&&|\\|\\||\\+|-|\\*|/|%|&|\\||\\^|!|<|>"
 		},
 		"types": {
-			"patterns": [{
-				"name": "storage.type.wip",
-				"match": "\\b(bool|i32)\\b"
-			}]
+			"name": "storage.type.wip",
+			"match": "\\b(bool|i32)\\b"
 		},
 		"function_definition": {
 			"begin": "fun",
