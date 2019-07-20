@@ -39,11 +39,11 @@
 		},
 		"keywords": {
 			"name": "keyword.control.wip",
-			"match": "\\b(else|fun|if)\\b"
+			"match": "\\b(else|fun|if|var)\\b"
 		},
 		"operators": {
 			"name": "keyword.operator.wip",
-			"match": "<<|>>|==|!=|<=|>=|&&|\\|\\||\\+|-|\\*|/|%|&|\\||\\^|!|<|>"
+			"match": "<<|>>|==|!=|<=|>=|&&|\\|\\||=|\\+|-|\\*|/|%|&|\\||\\^|!|<|>"
 		},
 		"types": {
 			"name": "storage.type.wip",
