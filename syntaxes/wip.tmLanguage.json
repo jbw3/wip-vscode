@@ -39,7 +39,7 @@
 		},
 		"keywords": {
 			"name": "keyword.control.wip",
-			"match": "\\b(else|fun|if|var|while)\\b"
+			"match": "\\b(elif|else|fun|if|var|while)\\b"
 		},
 		"operators": {
 			"name": "keyword.operator.wip",
