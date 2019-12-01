@@ -18,6 +18,9 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#assignment_operators"
+		},
+		{
 			"include": "#operators"
 		},
 		{
@@ -41,9 +44,13 @@
 			"name": "keyword.control.wip",
 			"match": "\\b(elif|else|extern|fun|if|var|while)\\b"
 		},
+		"assignment_operators": {
+			"name": "keyword.operator.assignment.wip",
+			"match": "<<=|>>=|\\+=|-=|\\*=|/=|%=|&=|\\|=|\\^=|="
+		},
 		"operators": {
 			"name": "keyword.operator.wip",
-			"match": "<<|>>|==|!=|<=|>=|&&|\\|\\||=|\\+|-|\\*|/|%|&|\\||\\^|!|<|>"
+			"match": "<<|>>|==|!=|<=|>=|&&|\\|\\||\\+|-|\\*|/|%|&|\\||\\^|!|<|>"
 		},
 		"types": {
 			"name": "storage.type.wip",
