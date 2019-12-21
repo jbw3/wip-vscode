@@ -53,7 +53,7 @@
 			"name": "string.quoted.double.wip",
 			"patterns": [{
 				"name": "constant.character.escape.wip",
-				"match": "\\\\[\\\\'\"nrt]"
+				"match": "\\\\([\\\\'\"nrt]|x[0-9A-Fa-f]{2}|u\\{[0-9A-Fa-f]{1,8}\\})"
 			}]
 		},
 		"assignment_operators": {
