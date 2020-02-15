@@ -58,11 +58,11 @@
 		},
 		"assignment_operators": {
 			"name": "keyword.operator.assignment.wip",
-			"match": "<<=|>>=|\\+=|-=|\\*=|/=|%=|&=|\\|=|\\^=|="
+			"match": "<<=|>>>=|>>=|\\+=|-=|\\*=|/=|%=|&=|\\|=|\\^=|="
 		},
 		"operators": {
 			"name": "keyword.operator.wip",
-			"match": "<<|>>|==|!=|<=|>=|&&|\\|\\||\\+|-|\\*|/|%|&|\\||\\^|!|<|>"
+			"match": "<<|>>>|>>|==|!=|<=|>=|&&|\\|\\||\\+|-|\\*|/|%|&|\\||\\^|!|<|>"
 		},
 		"types": {
 			"name": "storage.type.wip",
