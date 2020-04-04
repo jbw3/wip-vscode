@@ -72,7 +72,7 @@
 			"match": "\\b(bool|i8|i16|i32|i64|isize|str|u8|u16|u32|u64|usize)\\b"
 		},
 		"function_declaration": {
-			"begin": "fun",
+			"begin": "\\bfun\\b",
 			"end": "{|;",
 			"beginCaptures": {
 				"0": { "name": "keyword.control.wip" }
@@ -100,7 +100,7 @@
 			}]
 		},
 		"type_definition": {
-			"begin": "type",
+			"begin": "\\btype\\b",
 			"end": "{",
 			"beginCaptures": {
 				"0": { "name": "storage.type.wip" }
