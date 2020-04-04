@@ -9,6 +9,9 @@
 			"include": "#function_declaration"
 		},
 		{
+			"include": "#type_definition"
+		},
+		{
 			"include": "#constants_bool"
 		},
 		{
@@ -94,6 +97,21 @@
 				{
 					"include": "#types"
 				}]
+			}]
+		},
+		"type_definition": {
+			"begin": "type",
+			"end": "{",
+			"beginCaptures": {
+				"0": { "name": "storage.type.wip" }
+			},
+			"name": "meta.head.wip",
+			"patterns": [{
+				"include": "#comments"
+			},
+			{
+				"name": "entity.name.type.wip",
+				"match": "[_a-zA-Z][_a-zA-Z0-9]*"
 			}]
 		}
 	},
