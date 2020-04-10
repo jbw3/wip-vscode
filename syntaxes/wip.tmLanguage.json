@@ -3,7 +3,10 @@
 	"name": "WIP",
 	"patterns": [
 		{
-			"include": "#comments"
+			"include": "#block_comments"
+		},
+		{
+			"include": "#line_comments"
 		},
 		{
 			"include": "#function_declaration"
@@ -34,9 +37,17 @@
 		}
 	],
 	"repository": {
-		"comments": {
+		"line_comments": {
 			"name": "comment.line.wip",
 			"match": "#.*"
+		},
+		"block_comments": {
+			"name": "comment.block.wip",
+			"begin": "#!",
+			"end": "!#",
+			"patterns": [{
+				"include": "#block_comments"
+			}]
 		},
 		"constants_bool": {
 			"name": "constant.language.wip",
@@ -79,7 +90,10 @@
 			},
 			"name": "meta.function.definition.wip",
 			"patterns": [{
-				"include": "#comments"
+				"include": "#block_comments"
+			},
+			{
+				"include": "#line_comments"
 			},
 			{
 				"include": "#types"
@@ -92,7 +106,10 @@
 				},
 				"name": "meta.function.definition.parameters.wip",
 				"patterns": [{
-					"include": "#comments"
+					"include": "#block_comments"
+				},
+				{
+					"include": "#line_comments"
 				},
 				{
 					"include": "#types"
@@ -107,7 +124,10 @@
 			},
 			"name": "meta.head.wip",
 			"patterns": [{
-				"include": "#comments"
+				"include": "#block_comments"
+			},
+			{
+				"include": "#line_comments"
 			},
 			{
 				"name": "entity.name.type.wip",
