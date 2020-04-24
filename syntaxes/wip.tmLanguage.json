@@ -12,7 +12,7 @@
 			"include": "#function_declaration"
 		},
 		{
-			"include": "#type_definition"
+			"include": "#struct_definition"
 		},
 		{
 			"include": "#constants_bool"
@@ -116,13 +116,13 @@
 				}]
 			}]
 		},
-		"type_definition": {
-			"begin": "\\btype\\b",
+		"struct_definition": {
+			"begin": "\\bstruct\\b",
 			"end": "{",
 			"beginCaptures": {
-				"0": { "name": "storage.type.wip" }
+				"0": { "name": "storage.type.struct.wip" }
 			},
-			"name": "meta.head.wip",
+			"name": "meta.head.struct.wip",
 			"patterns": [{
 				"include": "#block_comments"
 			},
@@ -130,7 +130,7 @@
 				"include": "#line_comments"
 			},
 			{
-				"name": "entity.name.type.wip",
+				"name": "entity.name.type.struct.wip",
 				"match": "[_a-zA-Z][_a-zA-Z0-9]*"
 			}]
 		}
