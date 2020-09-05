@@ -99,6 +99,10 @@
 				"include": "#types"
 			},
 			{
+				"name": "keyword.operator.wip",
+				"match": "&"
+			},
+			{
 				"begin": "\\b([_a-zA-Z][_a-zA-Z0-9]*) *\\(",
 				"end": "\\)",
 				"beginCaptures": {
@@ -113,6 +117,10 @@
 				},
 				{
 					"include": "#types"
+				},
+				{
+					"name": "keyword.operator.wip",
+					"match": "&"
 				}]
 			}]
 		},
