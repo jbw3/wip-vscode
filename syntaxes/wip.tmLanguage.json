@@ -59,7 +59,7 @@
 		},
 		"keywords": {
 			"name": "keyword.control.wip",
-			"match": "\\b(elif|else|extern|for|fun|if|in|var|while)\\b"
+			"match": "\\b(break|continue|elif|else|extern|for|fun|if|in|var|while)\\b"
 		},
 		"strings": {
 			"begin": "\"",
