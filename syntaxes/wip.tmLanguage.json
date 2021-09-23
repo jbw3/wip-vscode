@@ -9,9 +9,6 @@
 			"include": "#line_comments"
 		},
 		{
-			"include": "#function_declaration"
-		},
-		{
 			"include": "#struct_definition"
 		},
 		{
@@ -81,48 +78,6 @@
 		"types": {
 			"name": "storage.type.wip",
 			"match": "\\b(bool|i8|i16|i32|i64|isize|str|u8|u16|u32|u64|usize)\\b"
-		},
-		"function_declaration": {
-			"begin": "\\bfun\\b",
-			"end": "{|;",
-			"beginCaptures": {
-				"0": { "name": "keyword.control.wip" }
-			},
-			"name": "meta.function.definition.wip",
-			"patterns": [{
-				"include": "#block_comments"
-			},
-			{
-				"include": "#line_comments"
-			},
-			{
-				"include": "#types"
-			},
-			{
-				"name": "keyword.operator.wip",
-				"match": "&"
-			},
-			{
-				"begin": "\\b([_a-zA-Z][_a-zA-Z0-9]*) *\\(",
-				"end": "\\)",
-				"beginCaptures": {
-					"1": { "name": "entity.name.function.wip" }
-				},
-				"name": "meta.function.definition.parameters.wip",
-				"patterns": [{
-					"include": "#block_comments"
-				},
-				{
-					"include": "#line_comments"
-				},
-				{
-					"include": "#types"
-				},
-				{
-					"name": "keyword.operator.wip",
-					"match": "&"
-				}]
-			}]
 		},
 		"struct_definition": {
 			"begin": "\\bstruct\\b",
