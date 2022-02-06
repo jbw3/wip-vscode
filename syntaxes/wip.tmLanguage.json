@@ -77,7 +77,7 @@
 		},
 		"types": {
 			"name": "storage.type.wip",
-			"match": "\\b(bool|i8|i16|i32|i64|isize|str|u8|u16|u32|u64|usize)\\b"
+			"match": "\\b(bool|i8|i16|i32|i64|isize|str|type|u8|u16|u32|u64|usize)\\b"
 		},
 		"struct_definition": {
 			"begin": "\\bstruct\\b",
