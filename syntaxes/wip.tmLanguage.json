@@ -51,7 +51,7 @@
 			"match": "\\b(false|true)\\b"
 		},
 		"constants_numeric": {
-			"name": "constant.language.wip",
+			"name": "constant.numeric.wip",
 			"match": "\\b(0b[01_]+|0o[0-7_]+|[0-9][0-9_]*(\\.[0-9_]+)*(e-?[0-9_]+)*|0x[0-9A-Fa-f_]+)\\b"
 		},
 		"keywords": {
