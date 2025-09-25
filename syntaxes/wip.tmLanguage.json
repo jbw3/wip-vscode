@@ -9,9 +9,6 @@
 			"include": "#line_comments"
 		},
 		{
-			"include": "#struct_definition"
-		},
-		{
 			"include": "#constants_bool"
 		},
 		{
@@ -56,7 +53,7 @@
 		},
 		"keywords": {
 			"name": "keyword.control.wip",
-			"match": "\\b(break|cast|const|continue|elif|else|extern|for|fun|if|in|return|var|while)\\b"
+			"match": "\\b(break|cast|const|continue|elif|else|extern|for|fun|if|in|return|struct|var|while)\\b"
 		},
 		"strings": {
 			"begin": "\"",
@@ -78,24 +75,6 @@
 		"types": {
 			"name": "storage.type.wip",
 			"match": "\\b(bool|f32|f64|i8|i16|i32|i64|isize|str|type|u8|u16|u32|u64|usize)\\b"
-		},
-		"struct_definition": {
-			"begin": "\\bstruct\\b",
-			"end": "{",
-			"beginCaptures": {
-				"0": { "name": "storage.type.struct.wip" }
-			},
-			"name": "meta.head.struct.wip",
-			"patterns": [{
-				"include": "#block_comments"
-			},
-			{
-				"include": "#line_comments"
-			},
-			{
-				"name": "entity.name.type.struct.wip",
-				"match": "[_a-zA-Z][_a-zA-Z0-9]*"
-			}]
 		}
 	},
 	"scopeName": "source.wip"
