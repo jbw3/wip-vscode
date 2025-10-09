@@ -6,6 +6,9 @@
 			"include": "#block_comments"
 		},
 		{
+			"include": "#built_ins"
+		},
+		{
 			"include": "#line_comments"
 		},
 		{
@@ -43,6 +46,10 @@
 				"include": "#block_comments"
 			}]
 		},
+		"built_ins": {
+			"name": "constant.language.wip",
+			"match": "@(cast|e|pi)\\b"
+		},
 		"constants_bool": {
 			"name": "constant.language.wip",
 			"match": "\\b(false|true)\\b"
@@ -53,7 +60,7 @@
 		},
 		"keywords": {
 			"name": "keyword.control.wip",
-			"match": "\\b(break|cast|const|continue|elif|else|extern|for|fun|if|in|return|struct|var|while)\\b"
+			"match": "\\b(break|const|continue|elif|else|extern|for|fun|if|in|return|struct|var|while)\\b"
 		},
 		"strings": {
 			"begin": "\"",
