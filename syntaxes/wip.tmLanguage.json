@@ -48,7 +48,7 @@
 		},
 		"built_ins": {
 			"name": "constant.language.wip",
-			"match": "@(cast|e|pi)\\b"
+			"match": "@(bitCast|cast|e|pi)\\b"
 		},
 		"constants_bool": {
 			"name": "constant.language.wip",
