@@ -48,7 +48,7 @@
 		},
 		"built_ins": {
 			"name": "constant.language.wip",
-			"match": "@(bitCast|cast|e|pi)\\b"
+			"match": "@(bitCast|cast|e|intToPtr|pi|ptrToInt)\\b"
 		},
 		"constants_bool": {
 			"name": "constant.language.wip",
@@ -60,7 +60,7 @@
 		},
 		"keywords": {
 			"name": "keyword.control.wip",
-			"match": "\\b(break|const|continue|elif|else|extern|for|fun|if|in|return|struct|var|while)\\b"
+			"match": "\\b(break|const|continue|elif|else|extern|for|fun|if|in|return|struct|unchecked|var|while)\\b"
 		},
 		"strings": {
 			"begin": "\"",
